@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/snake.jpg"); 
+    /* background-color: blue; */
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+}
+
+#levelBox{
+    position: absolute;
+    top: 110px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+}
+
+#title{
+    position: absolute;
+    top: 28px;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+    font-family: 'New Tegomin', serif;
+}
+
+#board{
+    background-color: black;
+    width: 90vmin;
+    height: 82vmin;
+    margin-top: 90px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    /* background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    border-radius: 9px; */
+    background: url(../img/upmouth.png);
+     background-size: 100% 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     z-index: 22;
+}
+
+.snake{
+    /* background-color: purple;
+    border-radius: 12px; */
+    background: url(../img/snakeimage.png);
+     background-size: 100% 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     z-index: 22;
+}
+
+.food{
+    /* background: linear-gradient(red, purple);*/
+    background: url(../img/food.png);
+     background-size: 100% 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     z-index: 22;
+}
+.enemy{
+    /* 
+    border: .25vmin solid black;
+    border-radius: 8px; */
+    background: url(../img/bomb.jpg);
+     background-size: 100% 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     z-index: 22;
+}
+h3{
+    position: absolute;
+    bottom: 47px;
+    right: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(70, 150, 150);
+}
